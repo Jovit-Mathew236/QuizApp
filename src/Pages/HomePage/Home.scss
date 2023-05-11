@@ -1,0 +1,11 @@
+$primary-color: #222831;
+$secondry-color: #393E46;
+$tertiary-color: #00ADB5;
+$quaternary-color: #EEEEEE;
+
+.page{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $primary-color;
+    color: $quaternary-color;
+}
