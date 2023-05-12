@@ -1,0 +1,26 @@
+$primary-color: #222831;
+$secondry-color: #393E46;
+$tertiary-color: #00ADB5;
+$quaternary-color: #EEEEEE;
+
+
+input {
+    border-radius: 30px;
+    padding: 20px;
+    height: 40px;
+    min-width: 280px;
+    background: #222831;
+    border: 2px solid $quaternary-color;
+    color: $quaternary-color;
+  }
+  button {
+    border: 1px solid $quaternary-color;
+    border-radius: 30px;
+    color: white;
+    background: transparent;
+    min-width: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 12px 60px;
+    cursor: pointer;
+  }

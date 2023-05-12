@@ -1,0 +1,21 @@
+input {
+  border-radius: 30px;
+  padding: 20px;
+  height: 40px;
+  min-width: 280px;
+  background: #222831;
+  border: 2px solid #EEEEEE;
+  color: #EEEEEE;
+}
+
+button {
+  border: 1px solid #EEEEEE;
+  border-radius: 30px;
+  color: white;
+  background: transparent;
+  min-width: 60px;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 12px 60px;
+  cursor: pointer;
+}
