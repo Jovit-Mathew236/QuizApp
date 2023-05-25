@@ -8,3 +8,6 @@
   fill: var(--chakra-colors-transparent);
   stroke: transparent;
 }
+::-webkit-scrollbar {
+  display: none;
+}
