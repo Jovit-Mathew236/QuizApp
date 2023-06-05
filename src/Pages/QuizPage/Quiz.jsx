@@ -1,12 +1,21 @@
-// import React from 'react'
-import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
+import { CircularProgress, CircularProgressLabel, useInterval } from '@chakra-ui/react'
 import './Quiz.scss'
 import { useContext, useState } from 'react'
 import { QuizContext } from '../../context/QuizHolder'
 
+
 const Quiz = () => {
   const [count, setCount] = useState(0)
+  const [second, setSecond] = useState(0)
   const { setExit, score, setScore } = useContext(QuizContext)
+
+useInterval(() => {
+  setSecond(second + 1)
+  if (second === 30) {
+    setExit(true)
+  }
+}, 1000)
+
   const questions = {
     "questions": [
       {
@@ -141,17 +150,18 @@ const Quiz = () => {
     }
     nextFunctions()
   }
+  // console.log((count*100/questions.questions.length));
   return (
     <div className="quiz_page">
       <div className="quiz_container">
         <div className="quiz_header">
-          <CircularProgress value={60} color='#F9D949' size='150px' thickness='8px' >
+          <CircularProgress value={(count*100/questions.questions.length)} color='#F9D949' size='150px' thickness='8px' >
             <CircularProgressLabel>{count+1}/{questions.questions.length}</CircularProgressLabel>
           </CircularProgress>
           <div className="question">{questions.questions[count].question}</div>
           <div className="time_circle">
-            <CircularProgress value={75} color='#00ADB5' size='150px' thickness='8px' >
-              <CircularProgressLabel>20</CircularProgressLabel>
+            <CircularProgress value={second*100/30} color='#00ADB5' size='150px' thickness='8px' >
+              <CircularProgressLabel>{second}</CircularProgressLabel>
             </CircularProgress>
           </div>
         </div>

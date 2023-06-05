@@ -2,11 +2,9 @@
 // import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import Button from '../../Components/Button'
-import Input from '../../Components/Input'
+// import Input from '../../Components/Input'
 import './Home.scss'
 import { QuizContext } from '../../context/QuizHolder'
-// import { useContext } from 'react'
-// import { QuizContext } from '../../context/QuizHolder'
 
 const Home = () => {
     // const navigate = useNavigate()

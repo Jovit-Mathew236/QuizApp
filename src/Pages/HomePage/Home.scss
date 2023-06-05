@@ -6,9 +6,9 @@ $quaternary-color: #eeeeee;
 .page {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: $primary-color;
+  // background-color: $primary-color;
   color: $quaternary-color;
-  background-image: url(./assets/images/bg.png);
+  background-image: url(./assets/images/bg2.webp);
   background-position: center;
   background-size: cover;
 }
@@ -34,4 +34,10 @@ form {
   box-shadow: 0px 4px 24px #ffffff59;
   border-radius: 20px;
   gap: 50px;
+  background-color: #00003cb5;
+}
+.page .start_container .start form button{
+  border: 1px solid #eeeeee;
+  padding: 10px 30px;
+  border-radius: 50px;
 }

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
+import './Components.scss'
 
 const Button = (props) => {
   return (
