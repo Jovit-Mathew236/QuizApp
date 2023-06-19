@@ -166,13 +166,6 @@ useInterval(() => {
           </div>
         </div>
         <div className="quiz_options_and_helpers">
-          {/* <div className="questions_container container sub">
-            {questions.questions.map((question, i) => (
-              <>
-                <p key={i}>{i + 1}&nbsp;&nbsp;{question.question}</p>
-              </>
-            ))}
-          </div> */}
           <div className="options_container container">
             {questions.questions[count].answers.map((answer, i) => (
               <div className="options" key={i}>
@@ -180,7 +173,7 @@ useInterval(() => {
               </div>
             ))}
             <div className="quite_skip">
-              <p onClick={() => setExit(true)}>Quite</p>
+              <p onClick={() => setExit(true)}>Quit</p>
               <p onClick={() => nextFunctions()}>Skip</p>
             </div>
           </div>
